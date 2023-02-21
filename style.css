@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Staatliches', sans-serif;
+  --ff-main: 'palanquin', sans-serif;
+  --fc-primary: hsl(var(--hue),218, 17%, 62%);
+
+  font-size: 62.5%;
+}
+
+body {
+  width: 38.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  height: 27.9rem;
+  background: #8E9AAF;
+}
+
+header img {
+  margin-top: 1rem;
+}
+
+.logo {
+  height: 49px;
+  background: #CBC0D3;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--ff-heading);
+  font-weight: 400;
+  font-size: 4rem;
+  margin-top: 3.2rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+}
+.page {
+  max-width: 40rem;
+}
+
+main {
+  font-family: var(--ff-heading);
+  background: #EFF1FF;
+  gap: 3.2rem;
+  display: grid;
+  
+}
+
+p {
+  font-family: var(--ff-main);
+  line-height: 1.5rem;
+  color: #23053A;
+  font-weight: 400;
+  padding: 4rem;
+}
+
+.card {
+  position: relative;
+  filter: brightness(1.2);
+  transition: transform  200ms;
+}
+
+.card img {
+  object-fit: cover;
+  margin-bottom: 3.2rem;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.card h2 {
+  position: absolute;
+  font-size: var(--ff-heading);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.0rem;
+  letter-spacing: 0.05em;
+  color: #4A4E69;
+  top: 1.6rem;
+  right: 4.6rem;
+}
+
+.card h2 span {
+  border-radius: 2rem;
+  background: #FEEAFA;
+  font-weight: 400;
+  width: fit-content;
+  display: inline-flex;
+  padding: 0 1.6rem;
+  align-items: center;
+}
+.paletes {
+  background: url(./images/sorvete1.svg);
+}
+
